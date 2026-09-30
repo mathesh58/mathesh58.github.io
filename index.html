@@ -1,89 +1,383 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#05091a" />
-  <meta name="description" content="Yoru Akihito — Anime Artist, Digital Illustrator and Future WEBTOON Creator." />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09080d">
+  <meta name="description" content="Yoru Akihito — Anime Artist, Digital Illustrator and Future WEBTOON Creator.">
   <title>Yoru Akihito | Anime Artist</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+  <div class="noise"></div>
   <div class="scanlines"></div>
+  <div class="cursor-glow"></div>
+
   <header class="topbar">
     <a class="brand" href="#home" aria-label="Yoru Akihito home">
       <span class="brand-mark">夜</span>
-      <span><strong>YORU AKIHITO</strong><small>ANIME ARTIST · DIGITAL ILLUSTRATOR</small></span>
+      <span class="brand-copy">
+        <strong>YORU AKIHITO</strong>
+        <small>ANIME ARTIST · DIGITAL ILLUSTRATOR</small>
+      </span>
     </a>
-    <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+
+    <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
     <nav class="nav" aria-label="Main navigation">
-      <a class="active" href="#home">HOME</a><a href="#artwork">ARTWORK</a><a href="#characters">CHARACTERS</a><a href="#webtoon">WEBTOON</a><a href="#process">PROCESS</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a>
+      <a class="active" href="#home">HOME</a>
+      <a href="#artwork">ARTWORK</a>
+      <a href="#characters">CHARACTERS</a>
+      <a href="#webtoon">WEBTOON</a>
+      <a href="#process">PROCESS</a>
+      <a href="#about">ABOUT</a>
+      <a href="#contact">CONTACT</a>
     </nav>
   </header>
 
-  <main id="home">
-    <section class="hero section-shell">
-      <div class="hero-art" role="img" aria-label="Futuristic anime portfolio artwork"></div>
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <div class="system-tag">SYSTEM // PORTFOLIO ONLINE</div>
-        <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
-        <h1>Yoru<br><span>Akihito</span></h1>
-        <p class="signature">Yoru / 夜</p>
-        <p class="lead">Anime Artist <b>✦</b> Digital Illustrator<br>Future WEBTOON Creator</p>
-        <div class="hero-actions"><a class="btn primary" href="#artwork">ENTER PORTFOLIO <span>→</span></a><a class="btn ghost" href="#about">VIEW PROFILE</a></div>
+  <main>
+    <section id="home" class="hero section-shell">
+      <div class="hero-grid"></div>
+      <div class="hero-orb orb-one"></div>
+      <div class="hero-orb orb-two"></div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="hero-frame"></div>
+        <img src="assets/hero.png" alt="" loading="eager">
       </div>
-      <div class="hero-status"><span class="dot"></span> CREATIVE SYSTEM ACTIVE <b>01 / 06</b></div>
-      <div class="scroll-cue">SCROLL<br><span>↓</span></div>
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <div class="system-tag">
+          <span class="pulse"></span>
+          CREATIVE SYSTEM // ONLINE
+        </div>
+
+        <p class="eyebrow">WELCOME TO MY WORLD</p>
+
+        <h1>Yoru<br><span>Akihito</span></h1>
+
+        <div class="name-line">
+          <span>夜</span>
+          <i></i>
+          <small>THE NIGHT · THE ARTIST</small>
+        </div>
+
+        <p class="lead">
+          Anime Artist <b>✦</b> Digital Illustrator<br>
+          Future WEBTOON Creator
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#artwork">ENTER PORTFOLIO <span>→</span></a>
+          <a class="btn ghost" href="#about">VIEW PROFILE</a>
+        </div>
+
+        <div class="hero-meta">
+          <span><b>FIELD</b> CHARACTER ART</span>
+          <span><b>STATUS</b> CREATING</span>
+        </div>
+      </div>
+
+      <div class="hero-status">
+        <span class="dot"></span>
+        CREATIVE SYSTEM ACTIVE
+        <b>01 / 06</b>
+      </div>
+
+      <div class="scroll-cue">
+        <span>SCROLL</span>
+        <i></i>
+      </div>
+
+      <div class="hero-corner corner-tl"></div>
+      <div class="hero-corner corner-br"></div>
     </section>
 
     <section id="artwork" class="section-shell section">
-      <div class="section-heading"><div><p class="kicker">DATABASE // 01</p><h2>Featured Works</h2></div><a class="text-link" href="#contact">REQUEST COMMISSION →</a></div>
-      <p class="section-intro">A curated selection of illustrations, fan art, original characters and visual experiments.</p>
-      <div class="gallery-grid">
-        <article class="art-card featured"><div class="art-placeholder art-1">
-  <span>01</span>
-  <img src="assets/art/fantasy-beast-rider.jpg" alt="Fantasy Beast Rider" style="width:100%;height:100%;object-fit:contain;display:block;">
-</div><div><small>ORIGINAL ART</small><h3>fantasy beast rider</h3></div></article>
-        <article class="art-card">
-  <div class="art-placeholder art-2">
-    <span>02</span>
-    <img src="assets/art/zerotwo.jpg" alt="Zero Two Fan Art" style="width:100%;height:100%;object-fit:contain;display:block;">
-  </div>
-  <div><small>FAN ART</small><h3>Zero Two</h3></div>
-</article>
-        <article class="art-card"><div class="art-placeholder art-3"><span>03</span></div><div><small>CROSSOVER</small><h3>Demon Slayer × Miku</h3></div></article>
-        <article class="art-card"><div class="art-placeholder art-4"><span>04</span></div><div><small>ORIGINAL CHARACTER</small><h3>Rodin — Character Study</h3></div></article>
+      <div class="section-heading">
+        <div>
+          <p class="kicker">ARCHIVE // 01</p>
+          <h2>Featured Works</h2>
+        </div>
+        <a class="text-link" href="#contact">REQUEST COMMISSION <span>→</span></a>
       </div>
-      <p class="upload-note">Replace these artwork panels with your own illustrations in <code>assets/art/</code>. The layout is already prepared for you.</p>
+
+      <p class="section-intro">
+        Illustrations, fan art, original characters and visual experiments from the Yoru archive.
+      </p>
+
+      <div class="filter-bar" aria-label="Artwork categories">
+        <button class="filter active" data-filter="all">ALL</button>
+        <button class="filter" data-filter="original">ORIGINAL</button>
+        <button class="filter" data-filter="fan">FAN ART</button>
+        <button class="filter" data-filter="character">CHARACTER</button>
+      </div>
+
+      <div class="gallery-grid">
+        <article class="art-card featured" data-category="original">
+          <button class="art-open" data-image="assets/art/fantasy-beast-rider.jpg"
+                  data-title="Fantasy Beast Rider" data-type="Original Art" data-description="A cinematic original character and creature composition.">
+            <div class="art-placeholder">
+              <span class="art-number">01</span>
+              <img src="assets/art/fantasy-beast-rider.jpg" alt="Fantasy Beast Rider" loading="lazy">
+              <span class="view-art">VIEW <b>+</b></span>
+            </div>
+          </button>
+          <div class="art-info">
+            <small>ORIGINAL ART</small>
+            <h3>Fantasy Beast Rider</h3>
+            <span>Character · Worldbuilding</span>
+          </div>
+        </article>
+
+        <article class="art-card" data-category="fan">
+          <button class="art-open" data-image="assets/art/zerotwo.jpg"
+                  data-title="Zero Two" data-type="Fan Art" data-description="A character study inspired by Darling in the FranXX.">
+            <div class="art-placeholder">
+              <span class="art-number">02</span>
+              <img src="assets/art/zerotwo.jpg" alt="Zero Two Fan Art" loading="lazy">
+              <span class="view-art">VIEW <b>+</b></span>
+            </div>
+          </button>
+          <div class="art-info">
+            <small>FAN ART</small>
+            <h3>Zero Two</h3>
+            <span>Character Study</span>
+          </div>
+        </article>
+
+        <article class="art-card" data-category="fan">
+          <button class="art-open" data-image="assets/art/demon-slayer-miku.jpg"
+                  data-title="Demon Slayer × Miku" data-type="Crossover" data-description="A crossover concept combining two anime-inspired visual worlds.">
+            <div class="art-placeholder">
+              <span class="art-number">03</span>
+              <img src="assets/art/demon-slayer-miku.jpg" alt="Demon Slayer and Miku crossover" loading="lazy">
+              <span class="view-art">VIEW <b>+</b></span>
+            </div>
+          </button>
+          <div class="art-info">
+            <small>CROSSOVER</small>
+            <h3>Demon Slayer × Miku</h3>
+            <span>Fan Art · Experiment</span>
+          </div>
+        </article>
+
+        <article class="art-card" data-category="character">
+          <button class="art-open" data-image="assets/art/rodin.jpg"
+                  data-title="Rodin — Character Study" data-type="Original Character" data-description="An original character exploration focused on silhouette, costume and personality.">
+            <div class="art-placeholder">
+              <span class="art-number">04</span>
+              <img src="assets/art/rodin.jpg" alt="Rodin character study" loading="lazy">
+              <span class="view-art">VIEW <b>+</b></span>
+            </div>
+          </button>
+          <div class="art-info">
+            <small>ORIGINAL CHARACTER</small>
+            <h3>Rodin — Character Study</h3>
+            <span>Design · Personality</span>
+          </div>
+        </article>
+      </div>
     </section>
 
     <section class="quick-grid section-shell">
-      <a href="#artwork" class="quick-card"><span class="icon">▧</span><strong>ARTWORK</strong><small>Illustrations & Fan Art</small></a>
-      <a href="#characters" class="quick-card"><span class="icon">♙</span><strong>CHARACTERS</strong><small>OCs & Character Design</small></a>
-      <a href="#webtoon" class="quick-card"><span class="icon">▤</span><strong>WEBTOON</strong><small>Story & Comic Projects</small></a>
-      <a href="#process" class="quick-card"><span class="icon">◫</span><strong>PROCESS</strong><small>From Sketch to Final</small></a>
-      <a href="#about" class="quick-card"><span class="icon">◇</span><strong>ABOUT</strong><small>My Journey & Goals</small></a>
+      <a href="#artwork" class="quick-card">
+        <span class="icon">◈</span>
+        <strong>ARTWORK</strong>
+        <small>Illustrations & Fan Art</small>
+      </a>
+      <a href="#characters" class="quick-card">
+        <span class="icon">♙</span>
+        <strong>CHARACTERS</strong>
+        <small>OCs & Character Design</small>
+      </a>
+      <a href="#webtoon" class="quick-card">
+        <span class="icon">▤</span>
+        <strong>WEBTOON</strong>
+        <small>Stories & Comic Projects</small>
+      </a>
+      <a href="#process" class="quick-card">
+        <span class="icon">◫</span>
+        <strong>PROCESS</strong>
+        <small>Sketch to Final</small>
+      </a>
+      <a href="#about" class="quick-card">
+        <span class="icon">◇</span>
+        <strong>ABOUT</strong>
+        <small>My Journey & Goals</small>
+      </a>
     </section>
 
-    <section id="characters" class="section-shell section split-section">
-      <div class="visual-panel"><div class="panel-glow"></div><div class="character-silhouette">Y / 夜</div></div>
-      <div class="copy-panel"><p class="kicker">DATABASE // 02</p><h2>Character Archive</h2><p>I build anime-inspired characters with distinct silhouettes, personalities, outfits and stories.</p><div class="stats"><span><b>OC</b> Original Characters</span><span><b>DESIGN</b> Visual Development</span><span><b>LORE</b> Story Integration</span></div><a class="btn ghost" href="#contact">VIEW CHARACTER FILES →</a></div>
+    <section id="characters" class="section-shell section character-section">
+      <div class="character-visual">
+        <div class="visual-grid"></div>
+        <div class="visual-orbit"></div>
+        <div class="character-mark">夜</div>
+        <div class="visual-label">CHARACTER<br>ARCHIVE / 002</div>
+        <div class="visual-id">YORU<br><b>01</b></div>
+      </div>
+
+      <div class="copy-panel reveal">
+        <p class="kicker">DATABASE // 02</p>
+        <h2>Character<br><em>Archive</em></h2>
+        <p>
+          I build anime-inspired characters with distinct silhouettes, personalities,
+          outfits and stories — designed to live beyond a single illustration.
+        </p>
+
+        <div class="stats">
+          <span><b>01</b><strong>OC</strong> Original Characters</span>
+          <span><b>02</b><strong>DESIGN</strong> Visual Development</span>
+          <span><b>03</b><strong>LORE</strong> Story Integration</span>
+        </div>
+
+        <a class="btn ghost" href="#webtoon">EXPLORE THE WORLD <span>→</span></a>
+      </div>
     </section>
 
-    <section id="webtoon" class="section-shell section project-section"><div><p class="kicker">PROJECT // 03</p><h2>Future WEBTOON</h2><p>Stories, characters and worlds built from the first sketch to the final panel.</p></div><div class="pipeline"><span>CONCEPT</span><i>→</i><span>CHARACTER</span><i>→</i><span>WORLD</span><i>→</i><span>STORYBOARD</span><i>→</i><span>FINAL PANEL</span></div></section>
+    <section id="webtoon" class="section-shell section project-section">
+      <div class="project-head reveal">
+        <div>
+          <p class="kicker">PROJECT // 03</p>
+          <h2>Future <em>WEBTOON</em></h2>
+        </div>
+        <span class="project-code">PROJECT Y / 001</span>
+      </div>
 
-    <section id="process" class="section-shell section"><div class="section-heading"><div><p class="kicker">ARTIST LOG // 04</p><h2>My Process</h2></div></div><div class="process-grid"><div><b>01</b><h3>Rough</h3><p>Pose, composition and visual idea.</p></div><div><b>02</b><h3>Lineart</h3><p>Clean vector and expressive lines.</p></div><div><b>03</b><h3>Base</h3><p>Flat colors and palette control.</p></div><div><b>04</b><h3>Render</h3><p>Shadow, light and atmosphere.</p></div></div></section>
+      <div class="project-copy reveal">
+        <p>
+          Stories, characters and worlds built from the first sketch to the final panel.
+          The long-term goal: turn original characters and ideas into complete WEBTOON stories.
+        </p>
+      </div>
 
-    <section id="about" class="section-shell section profile"><div class="profile-mark">夜</div><div><p class="kicker">PLAYER PROFILE // 05</p><h2>Yoru Akihito</h2><p>Anime artist and digital illustrator focused on character art, visual storytelling and the long-term goal of creating original WEBTOON stories.</p><div class="profile-list"><span><b>ROLE</b> Anime Artist</span><span><b>CLASS</b> Digital Illustrator</span><span><b>SPECIALTY</b> Character Art</span><span><b>GOAL</b> WEBTOON Creator</span></div></div><aside><p class="kicker">TOOLS & SKILLS</p><p>Clip Studio Paint EX</p><p>XP-Pen Star03 V2</p><p>Digital Illustration · Character Design</p></aside></section>
+      <div class="pipeline">
+        <div class="stage"><span>01</span><b>CONCEPT</b><small>IDEA</small></div>
+        <i>→</i>
+        <div class="stage"><span>02</span><b>CHARACTER</b><small>IDENTITY</small></div>
+        <i>→</i>
+        <div class="stage"><span>03</span><b>WORLD</b><small>LORE</small></div>
+        <i>→</i>
+        <div class="stage"><span>04</span><b>STORYBOARD</b><small>PANELS</small></div>
+        <i>→</i>
+        <div class="stage active"><span>05</span><b>FINAL PANEL</b><small>STORY</small></div>
+      </div>
+    </section>
 
-    <section id="contact" class="contact section-shell section"><p class="kicker">TRANSMISSION // 06</p><h2>Let's create something.</h2><p>Open for illustration projects, character design and future creative collaborations.</p><div class="contact-actions"><a class="btn primary" href="mailto:your-email@example.com">SEND MESSAGE →</a><a class="btn ghost" href="#home">BACK TO TOP ↑</a></div><div class="socials"><a href="#">Instagram</a><a href="#">WEBTOON</a><a href="#">YouTube</a><a href="#">X / Twitter</a></div></section>
+    <section id="process" class="section-shell section">
+      <div class="section-heading">
+        <div>
+          <p class="kicker">ARTIST LOG // 04</p>
+          <h2>My Process</h2>
+        </div>
+      </div>
+
+      <div class="process-grid">
+        <article class="process-card reveal">
+          <b>01</b><span class="process-line"></span>
+          <h3>Rough</h3>
+          <p>Pose, composition and the first visual idea.</p>
+        </article>
+        <article class="process-card reveal">
+          <b>02</b><span class="process-line"></span>
+          <h3>Lineart</h3>
+          <p>Clean, expressive lines that define the character.</p>
+        </article>
+        <article class="process-card reveal">
+          <b>03</b><span class="process-line"></span>
+          <h3>Base</h3>
+          <p>Flat colors, palette control and visual balance.</p>
+        </article>
+        <article class="process-card reveal">
+          <b>04</b><span class="process-line"></span>
+          <h3>Render</h3>
+          <p>Shadow, light, atmosphere and the final mood.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section-shell section profile reveal">
+      <div class="profile-mark">
+        <span>夜</span>
+        <small>YORU</small>
+      </div>
+
+      <div class="profile-main">
+        <p class="kicker">PLAYER PROFILE // 05</p>
+        <h2>Yoru Akihito</h2>
+        <p>
+          Anime artist and digital illustrator focused on character art,
+          visual storytelling and the long-term goal of creating original WEBTOON stories.
+        </p>
+
+        <div class="profile-list">
+          <span><b>ROLE</b> Anime Artist</span>
+          <span><b>CLASS</b> Digital Illustrator</span>
+          <span><b>SPECIALTY</b> Character Art</span>
+          <span><b>GOAL</b> WEBTOON Creator</span>
+        </div>
+      </div>
+
+      <aside>
+        <p class="kicker">TOOLS & SKILLS</p>
+        <div class="skill">Clip Studio Paint EX <span>●</span></div>
+        <div class="skill">XP-Pen Star03 V2 <span>●</span></div>
+        <div class="skill">Digital Illustration <span>●</span></div>
+        <div class="skill">Character Design <span>●</span></div>
+      </aside>
+    </section>
+
+    <section id="contact" class="contact section-shell section">
+      <div class="contact-symbol">夜</div>
+      <p class="kicker">TRANSMISSION // 06</p>
+      <h2>Let's create<br><em>something.</em></h2>
+      <p>
+        Open for illustration projects, character design and future creative collaborations.
+      </p>
+
+      <div class="contact-actions">
+        <a class="btn primary" href="mailto:your-email@example.com">SEND MESSAGE <span>→</span></a>
+        <a class="btn ghost" href="#home">BACK TO TOP <span>↑</span></a>
+      </div>
+
+      <div class="socials">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="WEBTOON">WEBTOON</a>
+        <a href="#" aria-label="YouTube">YouTube</a>
+        <a href="#" aria-label="X / Twitter">X / Twitter</a>
+      </div>
+    </section>
   </main>
 
-  <footer class="footer"><span>夜</span><span>© <span id="year"></span> Yoru Akihito</span><span>ART · STORIES · WORLDS</span></footer>
+  <div class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close artwork viewer">×</button>
+    <div class="lightbox-inner">
+      <div class="lightbox-image-wrap">
+        <img class="lightbox-image" src="" alt="">
+      </div>
+      <div class="lightbox-info">
+        <small class="lightbox-type"></small>
+        <h2 class="lightbox-title"></h2>
+        <p class="lightbox-description"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <span class="footer-mark">夜</span>
+    <span>© <span id="year"></span> Yoru Akihito</span>
+    <span>ART · STORIES · WORLDS</span>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
