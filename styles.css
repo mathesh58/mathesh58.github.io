@@ -395,7 +395,6 @@ button{font:inherit}
   background:#08070c;
 }
 
-/* Zero Two artwork area */
 .hero-art{
   position:absolute;
   inset:0;
@@ -419,7 +418,6 @@ button{font:inherit}
   transition:transform 1.2s ease, filter .6s ease;
 }
 
-/* Dark cinematic overlay */
 .hero-overlay{
   position:absolute;
   inset:0;
@@ -441,13 +439,11 @@ button{font:inherit}
     );
 }
 
-/* Keep hero content above artwork */
 .hero-content{
   position:relative;
   z-index:5;
 }
 
-/* Make the name stronger against the artwork */
 .hero h1{
   text-shadow:
     0 4px 25px rgba(0,0,0,.8),
@@ -462,7 +458,6 @@ button{font:inherit}
   text-shadow:0 2px 12px rgba(0,0,0,.8);
 }
 
-/* Futuristic frame */
 .hero-frame{
   z-index:3;
   right:4%;
@@ -475,7 +470,6 @@ button{font:inherit}
     0 0 35px rgba(255,35,90,.05);
 }
 
-/* Pink atmospheric glow */
 .orb-one{
   z-index:1;
   width:520px;
@@ -491,7 +485,6 @@ button{font:inherit}
     );
 }
 
-/* Hero image hover/parallax feel */
 .hero:hover .hero-art img{
   transform:scale(1.015);
   filter:
@@ -500,7 +493,6 @@ button{font:inherit}
     drop-shadow(0 0 45px rgba(255,43,101,.32));
 }
 
-/* Keep UI details above everything */
 .hero-status,
 .scroll-cue,
 .hero-corner{
@@ -597,7 +589,4 @@ button{font:inherit}
     right:-70px;
     top:25%;
   }
-}
-.socials .coming-soon:hover{
-  color:#8e818a;
 }
