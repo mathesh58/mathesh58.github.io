@@ -376,3 +376,14 @@ button{font:inherit}
   .lightbox{padding:15px}
   .lightbox-close{right:15px;top:8px}
 }
+/* CONTACT - COMING SOON */
+.socials .coming-soon{
+  color:#665b64;
+  cursor:default;
+  opacity:.75;
+  transition:.25s;
+}
+
+.socials .coming-soon:hover{
+  color:#8e818a;
+}
