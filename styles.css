@@ -405,17 +405,24 @@ button{font:inherit}
 }
 
 .hero-art img{
-  width:70%;
+  width:68%;
   max-width:none;
   height:100%;
   object-fit:cover;
-  object-position:72% center;
+
+  /* Zero Two positioning */
+  object-position:66% center;
+
   opacity:.92;
+
   filter:
-    saturate(.92)
+    saturate(.95)
     contrast(1.02)
-    drop-shadow(0 0 35px rgba(255,43,101,.25));
-  transition:transform 1.2s ease, filter .6s ease;
+    drop-shadow(0 0 38px rgba(255,43,101,.28));
+
+  transition:
+    transform 1.2s ease,
+    filter .6s ease;
 }
 
 .hero-overlay{
