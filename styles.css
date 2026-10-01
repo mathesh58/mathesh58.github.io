@@ -387,3 +387,217 @@ button{font:inherit}
 .socials .coming-soon:hover{
   color:#8e818a;
 }
+/* =========================================
+   HOME HERO - ZERO TWO EDITION
+   ========================================= */
+
+.hero{
+  background:#08070c;
+}
+
+/* Zero Two artwork area */
+.hero-art{
+  position:absolute;
+  inset:0;
+  display:flex;
+  justify-content:flex-end;
+  align-items:stretch;
+  overflow:hidden;
+}
+
+.hero-art img{
+  width:70%;
+  max-width:none;
+  height:100%;
+  object-fit:cover;
+  object-position:72% center;
+  opacity:.92;
+  filter:
+    saturate(.92)
+    contrast(1.02)
+    drop-shadow(0 0 35px rgba(255,43,101,.25));
+  transition:transform 1.2s ease, filter .6s ease;
+}
+
+/* Dark cinematic overlay */
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  z-index:2;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8,7,12,1) 0%,
+      rgba(8,7,12,.98) 25%,
+      rgba(8,7,12,.82) 43%,
+      rgba(8,7,12,.40) 62%,
+      rgba(8,7,12,.08) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(8,7,12,.88) 0%,
+      transparent 35%,
+      rgba(8,7,12,.08) 100%
+    );
+}
+
+/* Keep hero content above artwork */
+.hero-content{
+  position:relative;
+  z-index:5;
+}
+
+/* Make the name stronger against the artwork */
+.hero h1{
+  text-shadow:
+    0 4px 25px rgba(0,0,0,.8),
+    0 0 35px rgba(255,45,105,.12);
+}
+
+.name-line{
+  text-shadow:0 3px 15px rgba(0,0,0,.8);
+}
+
+.hero .lead{
+  text-shadow:0 2px 12px rgba(0,0,0,.8);
+}
+
+/* Futuristic frame */
+.hero-frame{
+  z-index:3;
+  right:4%;
+  top:12%;
+  width:48%;
+  height:76%;
+  border:1px solid rgba(255,76,119,.24);
+  box-shadow:
+    inset 0 0 45px rgba(255,35,90,.04),
+    0 0 35px rgba(255,35,90,.05);
+}
+
+/* Pink atmospheric glow */
+.orb-one{
+  z-index:1;
+  width:520px;
+  height:520px;
+  right:4%;
+  top:12%;
+  background:
+    radial-gradient(
+      circle,
+      rgba(255,43,100,.15),
+      rgba(255,43,100,.04) 35%,
+      transparent 70%
+    );
+}
+
+/* Hero image hover/parallax feel */
+.hero:hover .hero-art img{
+  transform:scale(1.015);
+  filter:
+    saturate(1)
+    contrast(1.03)
+    drop-shadow(0 0 45px rgba(255,43,101,.32));
+}
+
+/* Keep UI details above everything */
+.hero-status,
+.scroll-cue,
+.hero-corner{
+  z-index:6;
+}
+
+
+/* =========================================
+   MOBILE HERO
+   ========================================= */
+
+@media(max-width:900px){
+
+  .hero-art{
+    justify-content:flex-end;
+  }
+
+  .hero-art img{
+    width:78%;
+    height:100%;
+    object-position:72% center;
+    opacity:.68;
+  }
+
+  .hero-overlay{
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8,7,12,1) 0%,
+        rgba(8,7,12,.94) 32%,
+        rgba(8,7,12,.65) 58%,
+        rgba(8,7,12,.20) 100%
+      ),
+      linear-gradient(
+        0deg,
+        rgba(8,7,12,.92),
+        transparent 50%
+      );
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media(max-width:560px){
+
+  .hero{
+    min-height:730px;
+  }
+
+  .hero-art{
+    justify-content:flex-end;
+    align-items:stretch;
+  }
+
+  .hero-art img{
+    width:115%;
+    height:72%;
+    margin-right:-22%;
+    margin-top:auto;
+    object-position:72% center;
+    opacity:.38;
+  }
+
+  .hero-overlay{
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8,7,12,.99) 0%,
+        rgba(8,7,12,.91) 45%,
+        rgba(8,7,12,.58) 100%
+      ),
+      linear-gradient(
+        0deg,
+        rgba(8,7,12,.98) 0%,
+        rgba(8,7,12,.15) 65%,
+        rgba(8,7,12,.65) 100%
+      );
+  }
+
+  .hero-frame{
+    right:3%;
+    top:18%;
+    width:55%;
+    height:55%;
+    opacity:.45;
+  }
+
+  .orb-one{
+    width:300px;
+    height:300px;
+    right:-70px;
+    top:25%;
+  }
+}
+.socials .coming-soon:hover{
+  color:#8e818a;
+}
