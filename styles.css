@@ -636,7 +636,7 @@ button{font:inherit}
 }
 /* line-art sketch: shows full body, white lines on the dark card */
 .lc-art-sketch{min-height:520px}
-.lc-art img.lc-sketch{object-fit:contain;filter:invert(1);padding:12px}
+.lc-art img.lc-sketch{object-fit:contain;filter:invert(1);padding:12px;mix-blend-mode:screen}
 
 .lc-mark{
   font-family:Cinzel,serif;
