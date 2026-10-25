@@ -597,3 +597,99 @@ button{font:inherit}
     top:25%;
   }
 }
+/* =========================================
+   CHARACTER CARDS (Elric, Serena, Lucien, Seraphina)
+   Paste at the very bottom of styles.css
+   ========================================= */
+
+.lc-wrap{padding:0 0 110px;display:grid;gap:24px}
+
+.lc-card{
+  display:grid;
+  grid-template-columns:340px 1fr;
+  gap:40px;
+  padding:28px;
+  border:1px solid var(--line);
+  background:linear-gradient(145deg,rgba(26,19,29,.9),rgba(11,9,14,.96));
+  box-shadow:var(--shadow);
+}
+.lc-card:nth-child(even){grid-template-columns:1fr 340px}
+.lc-card:nth-child(even) .lc-art{order:2}
+
+.lc-art{
+  position:relative;
+  min-height:430px;
+  overflow:hidden;
+  display:grid;
+  place-items:center;
+  border:1px solid var(--line-white);
+  background:
+    radial-gradient(circle at 50% 45%,rgba(255,35,91,.15),transparent 30%),
+    linear-gradient(145deg,#181018,#08070b);
+}
+.lc-art img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+/* line-art sketch: shows full body, white lines on the dark card */
+.lc-art-sketch{min-height:520px}
+.lc-art img.lc-sketch{object-fit:contain;filter:invert(1);padding:12px}
+
+.lc-mark{
+  font-family:Cinzel,serif;
+  font-size:110px;
+  color:rgba(255,245,248,.82);
+  text-shadow:0 0 50px rgba(255,43,102,.35);
+}
+.lc-soon{
+  position:absolute;
+  left:16px;
+  bottom:14px;
+  font-size:8px;
+  letter-spacing:2px;
+  color:#8e7f89;
+}
+
+.lc-info{align-self:center}
+.lc-name{font-size:clamp(38px,5vw,56px);margin:8px 0 18px;line-height:1}
+.lc-quote{
+  margin:0 0 18px;
+  padding-left:16px;
+  border-left:2px solid var(--pink);
+  color:#e7dfe3;
+  font-family:Cinzel,serif;
+  font-size:16px;
+  line-height:1.7;
+}
+.lc-text{
+  max-width:600px;
+  margin:0 0 24px;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.85;
+}
+.lc-tags{display:flex;flex-wrap:wrap;gap:8px}
+.lc-tags span{
+  padding:8px 12px;
+  border:1px solid var(--line);
+  color:var(--pink-soft);
+  font-size:8px;
+  letter-spacing:2px;
+}
+
+@media(max-width:900px){
+  .lc-card,
+  .lc-card:nth-child(even){grid-template-columns:1fr;gap:28px}
+  .lc-card:nth-child(even) .lc-art{order:0}
+  .lc-art{min-height:360px}
+  .lc-art-sketch{min-height:460px}
+}
+@media(max-width:560px){
+  .lc-card{padding:18px}
+  .lc-art{min-height:300px}
+  .lc-art-sketch{min-height:420px}
+  .lc-wrap{padding-bottom:78px}
+}
