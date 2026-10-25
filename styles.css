@@ -693,3 +693,11 @@ button{font:inherit}
   .lc-art-sketch{min-height:420px}
   .lc-wrap{padding-bottom:78px}
 }
+@media(max-width:560px){
+  .hero-art img{opacity:.55}
+  .hero-overlay{
+    background:
+      linear-gradient(90deg,rgba(8,7,12,.97) 0%,rgba(8,7,12,.80) 45%,rgba(8,7,12,.40) 100%),
+      linear-gradient(0deg,rgba(8,7,12,.98) 0%,rgba(8,7,12,.15) 65%,rgba(8,7,12,.65) 100%);
+  }
+}
